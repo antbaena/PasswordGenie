@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CommonModule } from '@angular/common';
 import { PasswordCreatorComponent } from './password-creator.component';
 
 describe('PasswordCreatorComponent', () => {
@@ -8,7 +8,7 @@ describe('PasswordCreatorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PasswordCreatorComponent]
+      imports: [PasswordCreatorComponent,CommonModule]
     })
     .compileComponents();
 

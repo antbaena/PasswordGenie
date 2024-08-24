@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+    
   }
   
   app-root {
@@ -14,6 +15,7 @@ html, body {
   main {
     flex: 1;
     padding: 20px;
+    
     /* Ajusta el padding según lo necesario */
   }
   
