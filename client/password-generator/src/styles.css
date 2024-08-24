@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    /* Ajusta el padding según lo necesario */
+  }
+  
+  app-header, app-footer {
+    background-color: #f1f1f1; /* O el color de fondo que prefieras */
+
+    /* Ajusta el padding según lo necesario */
+  }
+  
