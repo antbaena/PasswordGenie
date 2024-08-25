@@ -1,12 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { FormsModule } from '@angular/forms';  // Importa FormsModule
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
-})
-export class HeaderComponent {
 
+})
+export class HeaderComponent implements OnInit {
+  currentRoute: string = '';
+  collapsed: boolean = true;
+
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.currentRoute = this.router.url;
+    });
+  }
+
+  isActive(route: string): boolean {
+    return this.currentRoute === route;
+  }
+
+  toggleCollapsed(): void {
+    this.collapsed = !this.collapsed;
+  }
 }

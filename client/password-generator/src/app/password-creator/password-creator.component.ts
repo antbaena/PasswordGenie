@@ -18,7 +18,7 @@ export class PasswordCreatorComponent {
   generatePassword() {
     // Verifica que al menos un checkbox esté activado
     if (!this.includeUppercase && !this.includeLowercase && !this.includeNumbers && !this.includeSymbols) {
-      alert('Debes seleccionar al menos una opción para generar una contraseña.');
+      alert('You must select at least one option to generate a password.');
       return;
     }
 

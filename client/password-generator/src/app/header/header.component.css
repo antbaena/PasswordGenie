@@ -5,3 +5,7 @@
 #nav{
     background-color: #82D173;
 }
+.nav-link.active {
+    font-weight: bold;
+  }
+  
