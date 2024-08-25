@@ -24,7 +24,7 @@ To get started with Password Genie, follow these steps:
 
 3. **Install Dependencies:**
 
-   Make sure you have [Node.js](https://nodejs.org/) installed. Then, install the necessary dependencies with:
+  Make sure you have [Node.js](https://nodejs.org/) and [Angular CLI](https://angular.io/guide/setup-local) installed. Then, install the necessary dependencies with:
 
    `npm install`
 
@@ -44,7 +44,7 @@ To get started with Password Genie, follow these steps:
 
 ## Screenshots 📸
 
-![Password Genie](https://via.placeholder.com/800x400?text=Password+Genie+Screenshot)
+![Password Genie](docs/screenshots/screenshot.png)
 
 ## Contributing 🤝
 
