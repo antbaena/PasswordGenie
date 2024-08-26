@@ -10,10 +10,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" [ngClass]="{'active': isActive('/')}" href="/">Generator</a>
+          <a class="nav-link" [ngClass]="{'active': isActive('/')}"  [routerLink]="['/']">Generator</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [ngClass]="{'active': isActive('/password-strength')}" href="/password-strength">How Strong is my password?</a>
+          <a class="nav-link" [ngClass]="{'active': isActive('/password-strength')}"  [routerLink]="['/password-strength']">How Strong is my password?</a>
         </li>
         
       </ul>

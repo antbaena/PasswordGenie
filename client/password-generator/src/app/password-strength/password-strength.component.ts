@@ -36,8 +36,8 @@ export class PasswordStrengthComponent {
     { threshold: 259200, message: "Your password is good! It could be cracked in less time than it takes to complete a multi-day business trip.", imageUrl: "business.png" },  // New division
     { threshold: 604800, message: "Your password is good! It could be cracked in less time than it takes to go on a week-long vacation.", imageUrl: "vacation.png" },
     { threshold: 2592000, message: "Your password is good! It could be cracked in less time than it takes to spend a month on a cruise.", imageUrl: "ship.png" },
-    { threshold: 31536000, message: "Your password is hard! It would take more time than than it takes for the Earth to complete a rotation.", imageUrl: "earth.png" },
-    { threshold: Infinity, message: "Your password very hard! It would take more time than than it takes for the Earth to complete a rotation.", imageUrl: "earth.png" }
+    { threshold: 31536000, message: "Your password is hard! It would take less time than the Earth's orbital period around the Sun", imageUrl: "earth.png" },
+    { threshold: Infinity, message: "Your password very hard! It would take more time than the Earth's orbital period around the Sun", imageUrl: "earth.png" }
   ];
   
   
