@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';  // Importa FormsModule
   standalone: true,
   imports: [FormsModule],
   templateUrl: './password-creator.component.html',
-  styleUrl: './password-creator.component.css'
+  styleUrl: './password-creator.component.scss'
 })
 export class PasswordCreatorComponent {
   length: number = 12;

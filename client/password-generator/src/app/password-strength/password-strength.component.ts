@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './password-strength.component.html',
-  styleUrl: './password-strength.component.css'
+  styleUrl: './password-strength.component.scss'
 })
 export class PasswordStrengthComponent {
   password: string = '';
@@ -141,7 +141,7 @@ export class PasswordStrengthComponent {
     const threshold = this.timeThresholds.find(t => seconds < t.threshold);
     
     // Devuelve un objeto con el mensaje y la URL de la imagen
-    return threshold ? { message: threshold.message, imageUrl: threshold.imageUrl } : { message: '', imageUrl: '' };
+    return threshold ? { message: threshold.message, imageUrl: "assets/"+threshold.imageUrl } : { message: '', imageUrl: '' };
   }
 }
 

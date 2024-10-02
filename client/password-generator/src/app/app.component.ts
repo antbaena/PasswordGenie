@@ -10,7 +10,7 @@ import { PasswordCreatorComponent } from './password-creator/password-creator.co
   standalone: true,
   imports: [RouterOutlet, FormsModule, HeaderComponent, FooterComponent,PasswordCreatorComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   // Propiedades vinculadas a ngModel
