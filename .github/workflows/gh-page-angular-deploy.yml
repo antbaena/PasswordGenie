@@ -25,10 +25,14 @@ jobs:
           node-version: '16'  
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd client/password-generator
+          npm install
 
       - name: Build the Angular app
-        run: npm run build -- --configuration production --output-path=docs --base-href=/PasswordGenie/
+        run: |
+          cd client/password-generator
+          npm run build -- --configuration production --output-path=docs --base-href=/PasswordGenie/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
