@@ -14,9 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Navigate to the correct directory
-        working-directory: ./client/password-generator
         run: |
-          echo "Working directory changed to PasswordGenie/client/password-generator"
+          ls 
+          cd client/password-generator
+          ls
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -27,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Build the Angular app
-        run: ng build -- --configuration production --output-path=docs --base-href=/PasswordGenie/
+        run: npm run build -- --configuration production --output-path=docs --base-href=/PasswordGenie/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
