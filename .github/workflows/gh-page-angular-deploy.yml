@@ -21,13 +21,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Ajusta a la versión de Node.js que uses
+          node-version: '16'  
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the Angular app
-        run: npm run build -- --configuration production --output-path=docs --base-href=/PasswordGenie/
+        run: ng build -- --configuration production --output-path=docs --base-href=/PasswordGenie/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
