@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Navigate to the correct directory
-        working-directory: ./PasswordGenie/client/password-generator
+        working-directory: ./client/password-generator
         run: |
           echo "Working directory changed to PasswordGenie/client/password-generator"
 
