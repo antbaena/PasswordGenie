@@ -13,11 +13,10 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
 
-      - name: Navigate to the correct directory
-        run: |
-          ls 
-          cd client/password-generator
-          ls
+      - name: Set the working directory to the project
+        working-directory: PasswordGenie/client/password-generator
+        run: echo "Changed working directory to PasswordGenie/client/password-generator"
+
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
